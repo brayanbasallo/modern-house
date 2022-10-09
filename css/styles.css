@@ -1,0 +1,211 @@
+* {
+  transform-style: preserve-3d;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #D9D9D9;
+  padding-top: 17%;
+}
+
+.container .floor {
+  transform: rotateX(85deg) rotateZ(300deg);
+  width: 40vw;
+  height: 60vw;
+}
+.container .floor .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 40vw;
+  height: 60vw;
+}
+.container .floor .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 40vw;
+  height: 60vw;
+  transform: translateY(-60vw) translateZ(0.5vw);
+}
+.container .floor .left {
+  height: 60vw;
+  width: 0.5vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-120vw) rotateY(90deg) translateZ(-0.5vw);
+  transform-origin: bottom right;
+}
+.container .floor .right {
+  width: 40vw;
+  height: 0.5vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-120vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .wall-1 {
+  width: 30vw;
+  height: 5vw;
+  transform: translateZ(0.1vw);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .wall-1 .bottom {
+  background: #A4A1C0;
+  width: 30vw;
+  height: 5vw;
+}
+.container .wall-1 .top {
+  background: #A4A1C0;
+  width: 30vw;
+  height: 5vw;
+  transform: translateY(-5vw) translateZ(20vw);
+}
+.container .wall-1 .left {
+  height: 5vw;
+  width: 20vw;
+  background: #A4A1C0;
+  transform: translateY(-10vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .wall-1 .right {
+  width: 30vw;
+  height: 20vw;
+  background: linear-gradient(180deg, #9F9DBC, #C8D7DC, #C1C0D5);
+  transform: translateY(-10vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .wall-2 {
+  width: 25vw;
+  height: 1vw;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateZ(0.1vw);
+}
+.container .wall-2 .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 25vw;
+  height: 1vw;
+}
+.container .wall-2 .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 25vw;
+  height: 1vw;
+  transform: translateY(-1vw) translateZ(40vw);
+}
+.container .wall-2 .left {
+  height: 1vw;
+  width: 40vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-2vw) rotateY(90deg) translateZ(-40vw);
+  transform-origin: bottom right;
+}
+.container .wall-2 .right {
+  width: 25vw;
+  height: 40vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-2vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .wall-back {
+  width: 1vw;
+  height: 40vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateZ(0.1vw);
+}
+.container .wall-back .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 1vw;
+  height: 40vw;
+}
+.container .wall-back .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 1vw;
+  height: 40vw;
+  transform: translateY(-40vw) translateZ(20vw);
+}
+.container .wall-back .left {
+  height: 40vw;
+  width: 20vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-80vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .wall-back .right {
+  width: 1vw;
+  height: 20vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-80vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass {
+  width: 25vw;
+  height: 0.2vw;
+  position: absolute;
+  right: 0;
+  top: 85%;
+  transform: translateZ(0.1vw);
+}
+.container .glass .bottom {
+  background: rgba(97, 105, 122, 0.2);
+  width: 25vw;
+  height: 0.2vw;
+}
+.container .glass .top {
+  background: rgba(97, 105, 122, 0.2);
+  width: 25vw;
+  height: 0.2vw;
+  transform: translateY(-0.2vw) translateZ(20vw);
+}
+.container .glass .left {
+  height: 0.2vw;
+  width: 20vw;
+  background: rgba(97, 105, 122, 0.2);
+  transform: translateY(-0.4vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .glass .right {
+  width: 25vw;
+  height: 20vw;
+  background: rgba(97, 105, 122, 0.2);
+  transform: translateY(-0.4vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass-back {
+  width: 0.2vw;
+  height: 15vw;
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translateZ(0.1vw);
+}
+.container .glass-back .bottom {
+  background: rgba(97, 105, 122, 0.2);
+  width: 0.2vw;
+  height: 15vw;
+}
+.container .glass-back .top {
+  background: rgba(97, 105, 122, 0.2);
+  width: 0.2vw;
+  height: 15vw;
+  transform: translateY(-15vw) translateZ(20vw);
+}
+.container .glass-back .left {
+  height: 15vw;
+  width: 20vw;
+  background: rgba(97, 105, 122, 0.2);
+  transform: translateY(-30vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .glass-back .right {
+  width: 0.2vw;
+  height: 20vw;
+  background: rgba(97, 105, 122, 0.2);
+  transform: translateY(-30vw) rotateX(90deg);
+  transform-origin: top left;
+}
+
+/*# sourceMappingURL=styles.css.map */
