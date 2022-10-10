@@ -12,8 +12,11 @@ body {
   padding-top: 17%;
 }
 
+.container * {
+  max-width: 70vw;
+}
 .container .floor {
-  transform: rotateX(85deg) rotateZ(300deg);
+  transform: rotateX(77deg) rotateZ(301deg);
   width: 40vw;
   height: 60vw;
 }
@@ -42,6 +45,105 @@ body {
   transform: translateY(-120vw) rotateX(90deg);
   transform-origin: top left;
 }
+.container .floor-2 {
+  transform: translateZ(20vw);
+  width: 30vw;
+  height: 26.1vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .floor-2 .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 30vw;
+  height: 26.1vw;
+}
+.container .floor-2 .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 30vw;
+  height: 26.1vw;
+  transform: translateY(-26.1vw) translateZ(2vw);
+}
+.container .floor-2 .left {
+  height: 26.1vw;
+  width: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-52.2vw) rotateY(90deg) translateZ(-2vw);
+  transform-origin: bottom right;
+}
+.container .floor-2 .right {
+  width: 30vw;
+  height: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-52.2vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .roof {
+  transform: translateZ(40vw);
+  width: 30vw;
+  height: 26vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .roof .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 30vw;
+  height: 26vw;
+}
+.container .roof .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 30vw;
+  height: 26vw;
+  transform: translateY(-26vw) translateZ(2vw);
+}
+.container .roof .left {
+  height: 26vw;
+  width: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-52vw) rotateY(90deg) translateZ(-2vw);
+  transform-origin: bottom right;
+}
+.container .roof .right {
+  width: 30vw;
+  height: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-52vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .floor-2-right {
+  transform: translateZ(20vw);
+  width: 25vw;
+  height: 30vw;
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+.container .floor-2-right .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 25vw;
+  height: 30vw;
+}
+.container .floor-2-right .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 25vw;
+  height: 30vw;
+  transform: translateY(-30vw) translateZ(2vw);
+}
+.container .floor-2-right .left {
+  height: 30vw;
+  width: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-60vw) rotateY(90deg) translateZ(-2vw);
+  transform-origin: bottom right;
+}
+.container .floor-2-right .right {
+  width: 25vw;
+  height: 2vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-60vw) rotateX(90deg);
+  transform-origin: top left;
+}
 .container .wall-1 {
   width: 30vw;
   height: 5vw;
@@ -64,7 +166,7 @@ body {
 .container .wall-1 .left {
   height: 5vw;
   width: 20vw;
-  background: #A4A1C0;
+  background: linear-gradient(299deg, #9F9DBC, #C8D7DC, #C1C0D5);
   transform: translateY(-10vw) rotateY(90deg) translateZ(-20vw);
   transform-origin: bottom right;
 }
@@ -76,36 +178,69 @@ body {
   transform-origin: top left;
 }
 .container .wall-2 {
-  width: 25vw;
-  height: 1vw;
+  width: 30vw;
+  height: 2vw;
   position: absolute;
   right: 0;
   top: 40%;
-  transform: translateZ(0.1vw);
+  transform: translateZ(20.1vw);
 }
 .container .wall-2 .bottom {
   background: radial-gradient(white 49%, #dbe5f0);
-  width: 25vw;
-  height: 1vw;
+  width: 30vw;
+  height: 2vw;
 }
 .container .wall-2 .top {
   background: radial-gradient(white 49%, #dbe5f0);
-  width: 25vw;
-  height: 1vw;
-  transform: translateY(-1vw) translateZ(40vw);
+  width: 30vw;
+  height: 2vw;
+  transform: translateY(-2vw) translateZ(20vw);
 }
 .container .wall-2 .left {
-  height: 1vw;
-  width: 40vw;
+  height: 2vw;
+  width: 20vw;
   background: radial-gradient(white 49%, #dbe5f0);
-  transform: translateY(-2vw) rotateY(90deg) translateZ(-40vw);
+  transform: translateY(-4vw) rotateY(90deg) translateZ(-20vw);
   transform-origin: bottom right;
 }
 .container .wall-2 .right {
-  width: 25vw;
-  height: 40vw;
+  width: 30vw;
+  height: 20vw;
   background: radial-gradient(white 49%, #dbe5f0);
-  transform: translateY(-2vw) rotateX(90deg);
+  transform: translateY(-4vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .wall-2-bottom {
+  width: 5vw;
+  height: 2vw;
+  position: absolute;
+  left: 10vw;
+  top: 40%;
+  transform: translateZ(0.1vw);
+}
+.container .wall-2-bottom .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 5vw;
+  height: 2vw;
+}
+.container .wall-2-bottom .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 5vw;
+  height: 2vw;
+  transform: translateY(-2vw) translateZ(20vw);
+}
+.container .wall-2-bottom .left {
+  height: 2vw;
+  width: 20vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-4vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .wall-2-bottom .right {
+  width: 5vw;
+  height: 20vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-4vw) rotateX(90deg);
   transform-origin: top left;
 }
 .container .wall-back {
@@ -141,6 +276,72 @@ body {
   transform: translateY(-80vw) rotateX(90deg);
   transform-origin: top left;
 }
+.container .wall-top-door {
+  width: 2vw;
+  height: 17vw;
+  position: absolute;
+  left: 15vw;
+  top: 24vw;
+  transform: translateZ(15vw);
+}
+.container .wall-top-door .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 2vw;
+  height: 17vw;
+}
+.container .wall-top-door .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 2vw;
+  height: 17vw;
+  transform: translateY(-17vw) translateZ(5vw);
+}
+.container .wall-top-door .left {
+  height: 17vw;
+  width: 5vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-34vw) rotateY(90deg) translateZ(-5vw);
+  transform-origin: bottom right;
+}
+.container .wall-top-door .right {
+  width: 2vw;
+  height: 5vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-34vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .wall-right-door {
+  width: 2vw;
+  height: 5vw;
+  position: absolute;
+  left: 15vw;
+  top: 36vw;
+  transform: translateZ(0.1vw);
+}
+.container .wall-right-door .bottom {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 2vw;
+  height: 5vw;
+}
+.container .wall-right-door .top {
+  background: radial-gradient(white 49%, #dbe5f0);
+  width: 2vw;
+  height: 5vw;
+  transform: translateY(-5vw) translateZ(15vw);
+}
+.container .wall-right-door .left {
+  height: 5vw;
+  width: 15vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-10vw) rotateY(90deg) translateZ(-15vw);
+  transform-origin: bottom right;
+}
+.container .wall-right-door .right {
+  width: 2vw;
+  height: 15vw;
+  background: radial-gradient(white 49%, #dbe5f0);
+  transform: translateY(-10vw) rotateX(90deg);
+  transform-origin: top left;
+}
 .container .glass {
   width: 25vw;
   height: 0.2vw;
@@ -150,12 +351,12 @@ body {
   transform: translateZ(0.1vw);
 }
 .container .glass .bottom {
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   width: 25vw;
   height: 0.2vw;
 }
 .container .glass .top {
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   width: 25vw;
   height: 0.2vw;
   transform: translateY(-0.2vw) translateZ(20vw);
@@ -163,14 +364,14 @@ body {
 .container .glass .left {
   height: 0.2vw;
   width: 20vw;
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   transform: translateY(-0.4vw) rotateY(90deg) translateZ(-20vw);
   transform-origin: bottom right;
 }
 .container .glass .right {
   width: 25vw;
   height: 20vw;
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   transform: translateY(-0.4vw) rotateX(90deg);
   transform-origin: top left;
 }
@@ -183,12 +384,12 @@ body {
   transform: translateZ(0.1vw);
 }
 .container .glass-back .bottom {
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   width: 0.2vw;
   height: 15vw;
 }
 .container .glass-back .top {
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   width: 0.2vw;
   height: 15vw;
   transform: translateY(-15vw) translateZ(20vw);
@@ -196,16 +397,187 @@ body {
 .container .glass-back .left {
   height: 15vw;
   width: 20vw;
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   transform: translateY(-30vw) rotateY(90deg) translateZ(-20vw);
   transform-origin: bottom right;
 }
 .container .glass-back .right {
   width: 0.2vw;
   height: 20vw;
-  background: rgba(97, 105, 122, 0.2);
+  background: rgba(151, 165, 195, 0.2);
   transform: translateY(-30vw) rotateX(90deg);
   transform-origin: top left;
+}
+.container .glass-front {
+  width: 0.2vw;
+  height: 20vw;
+  position: absolute;
+  left: 13vw;
+  top: 3.8vw;
+  transform: translateZ(0.1vw);
+}
+.container .glass-front .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 20vw;
+}
+.container .glass-front .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 20vw;
+  transform: translateY(-20vw) translateZ(20vw);
+}
+.container .glass-front .left {
+  height: 20vw;
+  width: 20vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-40vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .glass-front .right {
+  width: 0.2vw;
+  height: 20vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-40vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass-front-2 {
+  width: 0.2vw;
+  height: 10vw;
+  position: absolute;
+  left: 15vw;
+  top: 41vw;
+  transform: translateZ(0.1vw);
+}
+.container .glass-front-2 .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 10vw;
+}
+.container .glass-front-2 .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 10vw;
+  transform: translateY(-10vw) translateZ(20vw);
+}
+.container .glass-front-2 .left {
+  height: 10vw;
+  width: 20vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-20vw) rotateY(90deg) translateZ(-20vw);
+  transform-origin: bottom right;
+}
+.container .glass-front-2 .right {
+  width: 0.2vw;
+  height: 20vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-20vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass-two-back {
+  width: 0.2vw;
+  height: 26vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateZ(20vw);
+}
+.container .glass-two-back .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 26vw;
+}
+.container .glass-two-back .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 26vw;
+  transform: translateY(-26vw) translateZ(10vw);
+}
+.container .glass-two-back .left {
+  height: 26vw;
+  width: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-52vw) rotateY(90deg) translateZ(-10vw);
+  transform-origin: bottom right;
+}
+.container .glass-two-back .right {
+  width: 0.2vw;
+  height: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-52vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass-two-front {
+  width: 0.2vw;
+  height: 26vw;
+  position: absolute;
+  left: 10.1vw;
+  top: 0;
+  transform: translateZ(20vw);
+}
+.container .glass-two-front .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 26vw;
+}
+.container .glass-two-front .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.2vw;
+  height: 26vw;
+  transform: translateY(-26vw) translateZ(10vw);
+}
+.container .glass-two-front .left {
+  height: 26vw;
+  width: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-52vw) rotateY(90deg) translateZ(-10vw);
+  transform-origin: bottom right;
+}
+.container .glass-two-front .right {
+  width: 0.2vw;
+  height: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-52vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .glass-two-left {
+  width: 29.8vw;
+  height: 0.2vw;
+  position: absolute;
+  left: 10.1vw;
+  top: 0;
+  transform: translateZ(20vw);
+}
+.container .glass-two-left .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 29.8vw;
+  height: 0.2vw;
+}
+.container .glass-two-left .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 29.8vw;
+  height: 0.2vw;
+  transform: translateY(-0.2vw) translateZ(10vw);
+}
+.container .glass-two-left .left {
+  height: 0.2vw;
+  width: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-0.4vw) rotateY(90deg) translateZ(-10vw);
+  transform-origin: bottom right;
+}
+.container .glass-two-left .right {
+  width: 29.8vw;
+  height: 10vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-0.4vw) rotateX(90deg);
+  transform-origin: top left;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    transform: scale(0.7);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
