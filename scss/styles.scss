@@ -255,6 +255,80 @@ body {
       @include right($floor, $size, $height, $tall)
     }
   }
+  .right-door {
+    $size: .5;
+    $height: 2.5;
+    $tall: 15vw;
+    $wall-2: white;
+    $color: #7f7f7f;
+    width: $size+vw;
+    height: $height+vw;
+    position: absolute;
+    left: 15vw;
+    top: 34vw;
+    transform: translateZ(0.1vw);
+    .bottom {
+      @include bottom($color, $size, $height)
+    }
+    .top{
+      @include top($color, $size, $height, $tall)
+    }
+    .left{
+      @include  left($color, $height, $tall)
+    }
+    .right{
+      @include right($color, $size, $height, $tall)
+    }
+  }
+  .left-door {
+    $size: .5;
+    $height: 1;
+    $tall: 15vw;
+    $wall-2: white;
+    $color: #7f7f7f;
+    width: $size+vw;
+    height: $height+vw;
+    position: absolute;
+    left: 15vw;
+    top: 26vw;
+    transform: translateZ(0.1vw);
+    .bottom {
+      @include bottom($color, $size, $height)
+    }
+    .top{
+      @include top($color, $size, $height, $tall)
+    }
+    .left{
+      @include  left($color, $height, $tall)
+    }
+    .right{
+      @include right($color, $size, $height, $tall)
+    }
+  }
+  .door {
+    $size: .5;
+    $height: 4;
+    $tall: 15vw;
+    $wall-2: white;
+    width: $size+vw;
+    height: $height+vw;
+    position: absolute;
+    left: 15.2vw;
+    top: 30vw;
+    transform: translateZ(0.1vw);
+    .bottom {
+      @include bottom($glass-color, $size, $height)
+    }
+    .top{
+      @include top($glass-color, $size, $height, $tall)
+    }
+    .left{
+      @include  left($glass-color, $height, $tall)
+    }
+    .right{
+      @include right($glass-color, $size, $height, $tall)
+    }
+  }
   .wall-right-door{
     $size: 2;
     $height: 5;

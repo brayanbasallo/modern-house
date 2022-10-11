@@ -309,6 +309,105 @@ body {
   transform: translateY(-34vw) rotateX(90deg);
   transform-origin: top left;
 }
+.container .right-door {
+  width: 0.5vw;
+  height: 2.5vw;
+  position: absolute;
+  left: 15vw;
+  top: 34vw;
+  transform: translateZ(0.1vw);
+}
+.container .right-door .bottom {
+  background: #7f7f7f;
+  width: 0.5vw;
+  height: 2.5vw;
+}
+.container .right-door .top {
+  background: #7f7f7f;
+  width: 0.5vw;
+  height: 2.5vw;
+  transform: translateY(-2.5vw) translateZ(15vw);
+}
+.container .right-door .left {
+  height: 2.5vw;
+  width: 15vw;
+  background: #7f7f7f;
+  transform: translateY(-5vw) rotateY(90deg) translateZ(-15vw);
+  transform-origin: bottom right;
+}
+.container .right-door .right {
+  width: 0.5vw;
+  height: 15vw;
+  background: #7f7f7f;
+  transform: translateY(-5vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .left-door {
+  width: 0.5vw;
+  height: 1vw;
+  position: absolute;
+  left: 15vw;
+  top: 26vw;
+  transform: translateZ(0.1vw);
+}
+.container .left-door .bottom {
+  background: #7f7f7f;
+  width: 0.5vw;
+  height: 1vw;
+}
+.container .left-door .top {
+  background: #7f7f7f;
+  width: 0.5vw;
+  height: 1vw;
+  transform: translateY(-1vw) translateZ(15vw);
+}
+.container .left-door .left {
+  height: 1vw;
+  width: 15vw;
+  background: #7f7f7f;
+  transform: translateY(-2vw) rotateY(90deg) translateZ(-15vw);
+  transform-origin: bottom right;
+}
+.container .left-door .right {
+  width: 0.5vw;
+  height: 15vw;
+  background: #7f7f7f;
+  transform: translateY(-2vw) rotateX(90deg);
+  transform-origin: top left;
+}
+.container .door {
+  width: 0.5vw;
+  height: 4vw;
+  position: absolute;
+  left: 15.2vw;
+  top: 30vw;
+  transform: translateZ(0.1vw);
+}
+.container .door .bottom {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.5vw;
+  height: 4vw;
+}
+.container .door .top {
+  background: rgba(151, 165, 195, 0.2);
+  width: 0.5vw;
+  height: 4vw;
+  transform: translateY(-4vw) translateZ(15vw);
+}
+.container .door .left {
+  height: 4vw;
+  width: 15vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-8vw) rotateY(90deg) translateZ(-15vw);
+  transform-origin: bottom right;
+}
+.container .door .right {
+  width: 0.5vw;
+  height: 15vw;
+  background: rgba(151, 165, 195, 0.2);
+  transform: translateY(-8vw) rotateX(90deg);
+  transform-origin: top left;
+}
 .container .wall-right-door {
   width: 2vw;
   height: 5vw;
